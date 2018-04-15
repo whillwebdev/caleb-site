@@ -45,16 +45,19 @@ img {
 
 /* Navbar ========== */
 nav {
-  min-height: 50px;
+  /*max-height: 100px;
+  min-height: 75px;*/
   border-top: 3px solid #808080;
 }
 nav ul {
   margin: 0;
   padding: 3% 0;
+  height: inherit;
 }
 nav ul li {
   display: inline;
-  padding: 4.9% 5%;
+  padding: 4% 5%;
+  height: inherit;
 }
 nav ul li:hover {
   background-color: #808080;
@@ -72,6 +75,7 @@ nav ul li a {
 }*/
 .main {
   position: relative;
+  margin-top: 1%;
 }
 .name {
   position: absolute;
