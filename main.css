@@ -1,0 +1,272 @@
+figure {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+}
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+body{
+  padding:0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: #fff;
+}
+p {
+  font-size: 1em;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+figure {
+  margin-top: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navbar ========== */
+nav {
+  min-height: 50px;
+  border-top: 3px solid #808080;
+}
+nav ul {
+  margin: 0;
+  padding: 3% 0;
+}
+nav ul li {
+  display: inline;
+  padding: 4.9% 5%;
+}
+nav ul li:hover {
+  background-color: #808080;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Main content ========= */
+/*main {
+	width: 96%;
+	padding: 0 2%;
+	margin: auto;
+}*/
+.main {
+  position: relative;
+}
+.name {
+  position: absolute;
+  top: 1.5%;
+  left: 15%;
+}
+.bio-box {
+  background:rgba(0,0,0,0.7);
+  margin: 4%;
+  padding: 4%;
+}
+
+/* Footer ========== */
+footer {
+  background-color: #202020;
+  padding: 6%;
+}
+.footer-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.follow-me {
+  width: 45%;
+}
+.social-links {
+  padding: 0;
+}
+footer h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  display: inline;
+  padding: 0;
+  color: #fff;
+  font-size: 1.25em;
+}
+footer ul {
+  /*padding: 0 26.9%;*/
+}
+footer ul li {
+  display: inline;
+  padding: 2.5%;
+}
+footer img {
+  width: 7%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (min-width: 580px) {
+  /* sizing tweaks because there is a huge jump between 320px screen size and 768px screen size */
+
+/* Header =========== */
+  nav ul li {
+    font-size: 1.5em;
+  }
+
+  /* Main Content ========= */
+  .name {
+    left: 12%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* tablet styles ====== */
+
+  /* Header ========== */
+  nav ul li {
+    font-size: 1.75em;
+  }
+
+  /* Main Content ======== */
+  .name {
+    top: 2%;
+    left: 12%;
+  }
+  .name h1 {
+    font-size: 3em;
+  }
+  .bio-box p {
+    font-size: 1.5em;
+  }
+
+  /* Footer ======== */
+  .follow-me {
+    font-size: 2em;
+  }
+  footer img {
+    width: 5%;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  /* desktop styles ====== */
+
+  /* Navbar ========== */
+  nav ul {
+    padding: 2% 0;
+  }
+  nav ul li {
+    font-size: 2em;
+    padding: 32px 5%;
+  }
+
+/* Main Content ========= */
+.caleb-lake {
+  width: 40%;
+  z-index: -10;
+}
+.name {
+  position: absolute;
+  top: 12%;
+  left: 27%;
+  z-index: 10;
+}
+.bio-box {
+  position: absolute;
+  width: 68%;
+  top: 8%;
+  left: 23%;
+  padding-top: 10%;
+  margin: 0;
+  z-index: 1;
+}
+
+/* Footer ========== */
+  footer {
+    clear: both;
+  }
+  footer img {
+    width: 3%;
+  }
+}
+
+/*.crh-image-me {
+    width: 400px;
+}
+
+.crh-main{
+    height: 400px;
+    margin: 10px;
+    background: white;
+}
+
+.crh-link-personal{
+    font-family: Arial,Arial,sans-serif;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.crh-link-professional{
+    font-family: Arial,Arial,sans-serif;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    align-content: center;
+}
+
+li {
+    float: left;
+    padding: 10px 5px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+.footer{
+    margin: 0px auto;
+    background-color: lightgray;
+    border-top: 2px solid gray;
+    padding: 0;
+    bottom: 0;
+    position: absolute;
+}*/
